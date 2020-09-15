@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/logo"
+        android:layout_above="@+id/userImage"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="70sp"
+        android:src="@drawable/user"
+        android:layout_above="@+id/phoneNumber"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone number"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:id="@+id/phoneNumber"/>
+    <EditText
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Code"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:id="@+id/code"/>
+    <Button
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Verification Code"
+        android:id="@+id/send"/>
+
+</RelativeLayout>
