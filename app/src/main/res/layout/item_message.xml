@@ -24,6 +24,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="view media"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/round_button"
         android:id="@+id/viewMedia"/>
 
 </LinearLayout>

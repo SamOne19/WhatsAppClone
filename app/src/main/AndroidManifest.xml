@@ -12,9 +12,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".ChatActivity"></activity>
-        <activity android:name=".FindUserActivity" />
+        android:theme="@style/AppTheme">
+        <activity android:name=".ChatActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainPageActivity"/>
+        </activity>
+        <activity android:name=".FindUserActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainPageActivity"/>
+        </activity>
         <activity android:name=".MainPageActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>

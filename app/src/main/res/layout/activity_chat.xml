@@ -7,9 +7,6 @@
     tools:context=".ChatActivity"
     android:background="@drawable/bg">
 
-    <include android:id="@+id/toolbar"
-        layout="@layout/toolbar"/>
-
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,16 +37,14 @@
                 android:id="@+id/messageInput"
                 android:hint="message..."/>
             <Button
-                android:layout_weight="0.2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="add media"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_baseline_perm_media_24"
                 android:id="@+id/addMedia"/>
             <Button
-                android:layout_weight="0.2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="send"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_baseline_send_24"
                 android:id="@+id/send"/>
         </LinearLayout>
     </LinearLayout>
